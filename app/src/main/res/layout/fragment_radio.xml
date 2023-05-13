@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/radio_img"
+        android:src="@drawable/radio_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".6"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="اذاعة القران الكريم"
+        android:textSize="35sp"/>
+    <ImageView
+        android:id="@+id/play"
+        android:src="@drawable/ic_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/play_next"
+        android:src="@drawable/ic_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintBottom_toBottomOf="@id/play"
+        android:layout_marginStart="60dp"
+        />
+    <ImageView
+        android:id="@+id/play_previous"
+        android:src="@drawable/ic_baseline_skip_previous_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintBottom_toBottomOf="@id/play"
+        app:layout_constraintEnd_toStartOf="@id/play"
+        android:layout_marginEnd="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
